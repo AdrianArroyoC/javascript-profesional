@@ -88,3 +88,32 @@ function fullName3(firstName: string, lastName:string = ''): string {
 const adrian3 = fullName3('Adrian');
 
 console.log(adrian3);
+
+// Interfaces
+interface Rectangulo {
+    ancho: number;
+    alto: number;
+    color?: Color;
+}
+
+let rect: Rectangulo = {
+    ancho: 4,
+    alto: 6,
+    //color: Color.Rojo
+}
+
+function area(r: Rectangulo): number {
+    return r.alto * r.ancho;
+}
+
+const areaRec = area(rect);
+
+console.log(areaRec);
+
+console.log(rect.toString());
+
+rect.toString = function() {
+    return  this.color ? `Un rectángulo ${this.color}` : 'Un rectángulo';
+}
+
+console.log(rect.toString());
