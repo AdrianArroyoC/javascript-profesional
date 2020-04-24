@@ -1,0 +1,20 @@
+{
+  "name": "@adrianarroyoc/mediaplayer",
+  "version": "1.0.0",
+  "description": "Proyecto del Curso Profesional de JavaScript en Platzi",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Curso",
+    "JavaScript",
+    "Platzi"
+  ],
+  "author": "adrianarroyoc <adrianarroyoceja@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
